@@ -1,0 +1,95 @@
+.header-background {
+    min-height: 20vh;
+
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6)),
+        url('../img/header.jpg');
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.header-background h1 {
+    color: white;
+    font-weight: bold;
+    font-family: "Geist Pixel", sans-serif;
+    padding: 1rem;
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.main-nav {
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    font-family: "Geist Pixel", sans-serif;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav a {
+    padding-right: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.sticky-footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Geist Pixel", sans-serif;
+    padding: 1rem;
+}
+
+.sticky-footer p {
+    font-size: 0.9rem;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.sticky-footer h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+
