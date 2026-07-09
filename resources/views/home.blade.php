@@ -28,7 +28,7 @@
     <div class="timeline-table">
         <div class="side-icon">
             <i data-lucide="calculator" class="side-icon-icon"></i>
-            2019-2022
+            2024-2026
             <p>School</p>
         </div>
         <div class="info-panel">
@@ -45,8 +45,8 @@
     <div class="timeline-table">
         <div class="side-icon">
             <i data-lucide="briefcase" class="side-icon-icon"></i>
-            2019-2022
-            <p>School</p>
+            Present
+            <p>Seeking Employment</p>
         </div>
         <div class="info-panel">
             <h6>Looking for Opportunities</h6>
@@ -59,5 +59,9 @@
             </div>
         </div>
     </div>
+    </div>
+
+    <div class="page-header">
+        <h3>Skills</h3>
     </div>
 @endsection
