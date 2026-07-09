@@ -91,5 +91,82 @@ body {
     font-size: 1.5rem;
 }
 
+.page-header {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Geist Pixel", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    margin-top: 4px;
+
+}
+
+.timeline-table {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.timeline {
+    display: grid;
+    gap: 10px;
+}
+
+.side-icon {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.side-icon-icon {
+    width: 5rem;
+
+    height: 5rem;
+}
+
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.info-panel li {
+    list-style-type: disc;
+    text-align: end;
+}
+
+.info-panel h6 {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.info-panel ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info-panel h6 {
+    align-self: start;
+    margin-left: 2rem;
+}
+
+
+
 
 
