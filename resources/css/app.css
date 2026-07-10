@@ -43,7 +43,7 @@ main {
     border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 }
 
-ul {
+.main-nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -223,7 +223,14 @@ body {
 
 .info-panel li {
     list-style-type: disc;
-    text-align: end;
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+.specification ul {
+    display: block;
+    padding-left: 1.25rem;
+    margin: 0;
 }
 
 .info-panel h6 {
@@ -262,6 +269,10 @@ body {
     margin-top: 1rem;
     padding: 2rem;
     border-radius: 5%;
+}
+
+.middle-footer ul {
+    list-style: none;
 }
 
 .skill-heading h4 {
@@ -319,7 +330,78 @@ body {
     padding-top: .35rem;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    div.skills-row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer.sticky-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .middle-footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-left: 2rem;
+        list-style: none;
+    }
+
+    .middle-footer p {
+        text-align: start;
+        margin-left: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav ul.nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul.nav-menu.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav {
+        padding: 1rem;
+    }
+
+    .main-nav ul li a {
+        padding-bottom: 2rem;
+    }
+
+    .main-nav svg {
+        display: none;
+    }
+}
 
 
 

@@ -1,5 +1,10 @@
 <nav class="main-nav">
-<ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+<ul class="nav-menu" id="navMenu">
     <li><a href="{{ route('home') }}"
        class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">
       <i data-lucide="house"></i>

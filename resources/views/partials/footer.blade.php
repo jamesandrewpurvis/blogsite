@@ -8,7 +8,8 @@
     <div class="middle-footer">
         <p>Quick Links</p>
         <ul>
-            <li><a>Home</a></li>
+            <li><a href="{{ route('home') }}"
+                   class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
             <li><a>About</a></li>
             <li><a>Blog</a></li>
             <li><a>Resume</a></li>
