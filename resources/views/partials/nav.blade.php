@@ -11,7 +11,8 @@
             Home
         </a>
     </li>
-    <li><a>
+    <li><a href="{{ route('aboutme') }}"
+           class="nav-link {{ request()->routeIs('aboutme') ? 'active' : '' }}">
             <i data-lucide="circle-user"></i>
             About Me
         </a>

@@ -10,7 +10,8 @@
         <ul>
             <li><a href="{{ route('home') }}"
                    class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
-            <li><a>About</a></li>
+            <li><a href="{{ route('aboutme') }}"
+                   class="nav-link {{ request()->routeIs('aboutme') ? 'active' : '' }}">About me</a>
             <li><a>Blog</a></li>
             <li><a>Resume</a></li>
             <li><a>LinkedIn</a></li>
