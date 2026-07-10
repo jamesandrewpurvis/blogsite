@@ -1,6 +1,7 @@
 <nav class="main-nav">
 <ul>
-    <li><a>
+    <li><a href="{{ route('home') }}"
+       class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">
       <i data-lucide="house"></i>
             Home
         </a>
