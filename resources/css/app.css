@@ -350,6 +350,54 @@ body {
     gap: 1rem;
 }
 
+.about-me-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-radius: 3%;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-me-photo {
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url('../img/me.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.about-me-photo-area {
+    padding: 2rem;
+}
+
+.about-me-text {
+    padding: 2rem;
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.about-me-text h3 {
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.about-me-button-box {
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+}
+
 @media (max-width: 768px) {
     div.skills-row {
         display: grid;
@@ -401,6 +449,13 @@ body {
     .main-nav svg {
         display: none;
     }
+
+    .about-me-card {
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
