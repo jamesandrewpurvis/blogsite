@@ -10,3 +10,7 @@ Route::get('/aboutme', function () {
     return view('aboutme');
 })->name('aboutme');
 
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+

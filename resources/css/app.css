@@ -398,6 +398,93 @@ body {
     padding: 2rem;
 }
 
+.featured-blog-card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 275px;
+
+}
+
+.recent-blog-row {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.featured-pic {
+    background-image: url("../img/stock1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.featured-info {
+    font-family: "Geist Pixel", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.featured-desc {
+    text-align: start;
+    margin-left: 1.5rem;
+}
+
+.featured-desc p {
+    margin: 0;
+}
+
+.featured-button {
+    text-align: end;
+    padding: 0.6rem;
+}
+
+.recent-blog-card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.recent-blog-card img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.recent-blog-content p {
+    font-family: "Geist Pixel", sans-serif;
+    padding: 2rem;
+}
+
+.recent-blog-button p {
+    text-align: end;
+    padding: 0.2rem;
+    padding-bottom: 0;
+    margin: 0.2rem;
+}
+
+.recent-blog-content h3 {
+    font-family: "Geist Pixel", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
 @media (max-width: 768px) {
     div.skills-row {
         display: grid;
@@ -455,6 +542,21 @@ body {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .recent-blog-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .featured-button {
+        text-align: center;
+    }
+
+    .featured-blog-card {
+        padding-bottom: 20px;
+    }
+
 
 }
 

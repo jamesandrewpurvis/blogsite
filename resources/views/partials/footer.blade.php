@@ -12,9 +12,10 @@
                    class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
             <li><a href="{{ route('aboutme') }}"
                    class="nav-link {{ request()->routeIs('aboutme') ? 'active' : '' }}">About me</a>
-            <li><a>Blog</a></li>
-            <li><a>Resume</a></li>
-            <li><a>LinkedIn</a></li>
+            <li><a href="{{ route('blog') }}"
+                   class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}">Blog</a>
+            <li><a class="#">Resume</a></li>
+            <li><a class="#">LinkedIn</a></li>
         </ul>
     </div>
     <div class="right-footer">

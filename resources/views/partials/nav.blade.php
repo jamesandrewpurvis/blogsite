@@ -17,17 +17,18 @@
             About Me
         </a>
     </li>
-    <li><a>
+    <li><a href="{{ route('blog') }}"
+           class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}">
             <i data-lucide="book"></i>
             Blog
         </a>
     </li>
-    <li><a>
+    <li><a class="#">
             <i data-lucide="earth"></i>
             LinkedIn
         </a>
     </li>
-    <li><a>
+    <li><a class="#">
             <i data-lucide="sticky-note"></i>
             Resume
         </a>
