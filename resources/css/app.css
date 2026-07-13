@@ -371,7 +371,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     background-color: black;
-    background-image: url('../img/me.jpg');
+    background-image: url('../img/newimg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,7 +421,6 @@ body {
 
 
 .featured-pic {
-    background-image: url("../img/stock1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 50%;
@@ -458,32 +457,46 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr auto;
+    height: 455px;
 
 }
 
 .recent-blog-card img {
-    height: 100%;
+    height: 200px;
     width: 100%;
-    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .recent-blog-content p {
     font-family: "Geist Pixel", sans-serif;
-    padding: 2rem;
+    padding: 1.0rem;
 }
 
 .recent-blog-button p {
     text-align: end;
-    padding: 0.2rem;
-    padding-bottom: 0;
-    margin: 0.2rem;
+}
+
+.recent-blog-button {
+    display: flex;
+    flex-direction: column;
+    font-family: "Geist Pixel", sans-serif;
+    padding: 1rem;
 }
 
 .recent-blog-content h3 {
     font-family: "Geist Pixel", sans-serif;
     text-align: center;
     text-decoration: underline;
+}
+
+.no-posts-found {
+    text-align: center;
+    grid-column: 1/-1;
+    font-family: "Geist Pixel", sans-serif;
+
 }
 @media (max-width: 768px) {
     div.skills-row {

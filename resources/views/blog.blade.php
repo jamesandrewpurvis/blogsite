@@ -8,13 +8,13 @@
     </div>
     <div class="featured-blog-card">
         <div class="featured-row">
-            <div class="featured-pic"></div>
+            <div class="featured-pic" style="background-image: {{$featured->post_image}}"></div>
                 <div class="featured-info">
                     <div class="featured-header">
-                        <h3>Featured Content</h3>
+                        <h3>{{$featured->post_title}}</h3>
                     </div>
                     <div class="featured-desc">
-                        <p>Exploring new ideas, creative projects, and lessons learned throughout my journey</p>
+                        <p>{{$featured->post_description}}</p>
                     </div>
                     <div class="featured-button">
                         <p>Read more.</p>
@@ -26,35 +26,21 @@
      <h3>Recent Articles</h3>
     </div>
     <div class="recent-blog-row">
+        @forelse($posts as $post)
         <div class="recent-blog-card">
-            <img src="../img/stock2.jpg">
+            <img src="{{$post->post_image}}">
             <div class="recent-blog-content">
-                <h3>Recent Article 1</h3>
-                <p>The calculator quickly solved complex equations, saving time for every student.</p>
-                <div class="recent-blog-button">
-                    <p>Read more.</p>
-                </div>
+                <h3>{{$post->post_title}}</h3>
+                <p>{{$post->post_description}}</p>
+            </div>
+            <div class="recent-blog-button">
+                <p>Read more.</p>
             </div>
         </div>
-        <div class="recent-blog-card">
-            <img src="../img/stock2.jpg">
-            <div class="recent-blog-content">
-                <h3>Recent Article 1</h3>
-                <p>The calculator quickly solved complex equations, saving time for every student.</p>
-                <div class="recent-blog-button">
-                    <p>Read more.</p>
-                </div>
+        @empty
+            <div class="no-posts-found">
+                <h3>No posts found.</h3>
             </div>
-        </div>
-        <div class="recent-blog-card">
-            <img src="../img/stock2.jpg">
-            <div class="recent-blog-content">
-                <h3>Recent Article 1</h3>
-                <p>The calculator quickly solved complex equations, saving time for every student.</p>
-                <div class="recent-blog-button">
-                    <p>Read more.</p>
-                </div>
-            </div>
-        </div>
+        @endforelse
     </div>
 @endsection
