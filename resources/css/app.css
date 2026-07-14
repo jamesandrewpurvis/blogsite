@@ -1,6 +1,6 @@
 .header-background {
     min-height: 20vh;
-
+    width: auto;
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.6)),
         url('../img/header.jpg');
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 body {
     margin: 0;
@@ -58,6 +59,7 @@ main {
     align-items: center;
     gap: 8px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .main-nav a:hover {
@@ -128,6 +130,8 @@ body {
 
 .middle-footer ul li a {
     font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -586,7 +590,9 @@ body {
     }
 
     .main-nav {
-        padding: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
     }
 
     .main-nav ul li a {

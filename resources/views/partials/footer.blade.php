@@ -13,9 +13,9 @@
             <li><a href="{{ route('aboutme') }}"
                    class="nav-link {{ request()->routeIs('aboutme') ? 'active' : '' }}">About me</a>
             <li><a href="{{ route('blog.index') }}"
-                   class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}">Blog</a>
-            <li><a class="#">Resume</a></li>
-            <li><a class="#">LinkedIn</a></li>
+                   class="nav-link {{ request()->routeIs('blog.*') ? 'active' : '' }}">Blog</a>
+            <li><a href="/resume.docx">Resume</a></li>
+            <li><a href="http://linkedin.com/in/andy_purvis">LinkedIn</a></li>
         </ul>
     </div>
     <div class="right-footer">
