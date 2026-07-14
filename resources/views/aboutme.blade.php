@@ -18,7 +18,7 @@
                <span>I am enrolled at WGU currently in their Masters in Accounting with a Financial Reporting Specialization.</span>
                <span>I plan to sit the CPA.</span>
            <div class="about-me-button-box">
-               <a href="./resume.docx">Click here to view my Resume</a>
+               <a href="{{asset('resume.pdf')}}">Click here to view my Resume</a>
            </div>
        </div>
     </div>
