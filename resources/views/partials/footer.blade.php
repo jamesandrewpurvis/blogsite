@@ -15,7 +15,7 @@
             <li><a href="{{ route('blog.index') }}"
                    class="nav-link {{ request()->routeIs('blog.*') ? 'active' : '' }}">Blog</a>
             <li><a href="/resume.docx">Resume</a></li>
-            <li><a href="http://linkedin.com/in/andy_purvis">LinkedIn</a></li>
+            <li><a href="http://linkedin.com/in/andy-purvis">LinkedIn</a></li>
         </ul>
     </div>
     <div class="right-footer">
