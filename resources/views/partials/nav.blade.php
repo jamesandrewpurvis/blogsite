@@ -24,12 +24,12 @@
             Blog
         </a>
     </li>
-    <li><a class="#">
+    <li><a class="http://linkedin.com/in/andy-purvis">
             <i data-lucide="earth"></i>
             LinkedIn
         </a>
     </li>
-    <li><a class="#">
+    <li><a class="/resume.pdf">
             <i data-lucide="sticky-note"></i>
             Resume
         </a>
