@@ -29,7 +29,7 @@
             LinkedIn
         </a>
     </li>
-    <li><a href="./resume.pdf">
+    <li><a href="{{asset('resume.pdf')}}">
             <i data-lucide="sticky-note"></i>
             Resume
         </a>
