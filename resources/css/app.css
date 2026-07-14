@@ -622,7 +622,7 @@ body {
     }
 
     @media (max-width: 566px) {
-     ;['']   .header-background h1 {
+     .header-background h1 {
             font-size: 4rem;
         }
     }
