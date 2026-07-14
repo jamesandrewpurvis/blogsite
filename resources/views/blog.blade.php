@@ -7,21 +7,17 @@
         <h3>Featured Content</h3>
     </div>
     <div class="featured-blog-card">
-        <div class="featured-row">
-            <div class="featured-pic" style="background-image: {{$featured->post_image}}"></div>
-                <div class="featured-info">
-                    <div class="featured-header">
-                        <h3>{{$featured->post_title}}</h3>
-                    </div>
-                    <div class="featured-desc">
-                        <p>{{$featured->post_description}}</p>
-                    </div>
-                    <div class="featured-button">
-                        <p>Read more.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="featured-pic">
+            <img src="{{$featured->post_image}}">
         </div>
+        <div class="featured-post-info">
+            <h3 class="featured-header">{{$featured->post_title}}</h3>
+            <p class="featured-desc">{{$featured->post_description}}</p>
+        </div>
+        <div class="featured-button">
+            <a href="{{ route('blog.show', $featured->post_slug) }}">Read more.</a>
+        </div>
+    </div>
     <div class="page-header">
      <h3>Recent Articles</h3>
     </div>
@@ -34,7 +30,7 @@
                 <p>{{$post->post_description}}</p>
             </div>
             <div class="recent-blog-button">
-                <p>Read more.</p>
+                <a href="{{ route('blog.show', $post->post_slug) }}">Read more.</a>
             </div>
         </div>
         @empty

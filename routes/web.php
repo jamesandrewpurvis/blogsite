@@ -11,5 +11,6 @@ Route::get('/aboutme', function () {
     return view('aboutme');
 })->name('aboutme');
 
-Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 

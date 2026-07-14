@@ -12,7 +12,7 @@
                    class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
             <li><a href="{{ route('aboutme') }}"
                    class="nav-link {{ request()->routeIs('aboutme') ? 'active' : '' }}">About me</a>
-            <li><a href="{{ route('blog') }}"
+            <li><a href="{{ route('blog.index') }}"
                    class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}">Blog</a>
             <li><a class="#">Resume</a></li>
             <li><a class="#">LinkedIn</a></li>

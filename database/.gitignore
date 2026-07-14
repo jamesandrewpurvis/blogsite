@@ -1,1 +1,11 @@
-*.sqlite*
+/vendor/
+/node_modules/
+
+.env
+
+/public/storage
+
+.vscode/
+.idea/
+
+.DS_Store

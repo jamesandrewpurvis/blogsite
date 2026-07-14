@@ -17,8 +17,9 @@
             About Me
         </a>
     </li>
-    <li><a href="{{ route('blog') }}"
-           class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}">
+    <li>
+        <a href="{{ route('blog.index') }}"
+           class="nav-link {{ request()->routeIs('blog.*') ? 'active' : '' }}">
             <i data-lucide="book"></i>
             Blog
         </a>
